@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <rect width="128" height="128" rx="28" fill="#0B2545"/>
-  <path d="M64 16L70 40L94 48L70 56L64 80L58 56L34 48L58 40L64 16Z" fill="rgba(13,148,136,0.12)" stroke="#0D9488" stroke-width="2.5" stroke-linejoin="round"/>
-  <path d="M64 28L68 42L82 48L68 54L64 68L60 54L46 48L60 42L64 28Z" fill="rgba(13,148,136,0.2)" stroke="#0D9488" stroke-width="1.2" stroke-linejoin="round"/>
-  <circle cx="64" cy="48" r="7" fill="#0D9488"/>
-  <circle cx="64" cy="48" r="3.5" fill="#14b8a8"/>
-  <text x="64" y="108" font-family="system-ui,sans-serif" font-size="18" font-weight="600" fill="#0D9488" text-anchor="middle" letter-spacing="3">NUUR</text>
-</svg>
