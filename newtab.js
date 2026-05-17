@@ -2707,7 +2707,9 @@ async function getSystemPromptWithLanguage(pageUrl) {
   const base = await new Promise(resolve => {
     chrome.runtime.sendMessage({ type: "BUILD_SYSTEM_PROMPT", pageUrl: pageUrl || "" }, (res) => {
       if (chrome.runtime.lastError) { resolve("You are Nuur, an AI agent by Kulan Group Ltd."); return; }
-      resolve(res || "You are Nuur, an AI agent by Kulan Group Ltd.");
+      // res may be a string (from background.js) or an object {system:"..."} (from web shim)
+      const prompt = typeof res === "string" ? res : (res?.system || res || "You are Nuur, an AI agent by Kulan Group Ltd.");
+      resolve(prompt);
     });
   });
   const lang = getLanguageSystemPrompt();
